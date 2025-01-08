@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+    <title>Eden Berger</title>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+    <meta content="utf-8" http-equiv="encoding">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="theme-color" content="#000084" />
+    <link rel="icon" href="https://edenberger.io//favicon.ico">
+    <link rel="canonical" href="https://edenberger.io/">
+    <link rel="stylesheet" href="/css/bootstrap.css">
+    <link rel="stylesheet" href="/css/bootstrap-responsive.css">
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+        <img src="/bg.svg" alt="background" class="background">
+        <div class="screen">
+<nav class="navbar navbar-inverse">
+    <div class="navbar-inner">
+        <div class="container">
+            <a class="site-title" href="https://edenberger.io/">Eden Berger</a>
+            <ul class="nav">
+                
+                
+                    
+                        <li>
+                            <a href="/pages/about">
+                                
+                                <span>About</span>
+                            </a>
+                        </li>
+                    
+                
+                    
+                        <li>
+                            <a href="/pages/contact">
+                                
+                                <span>Contact</span>
+                            </a>
+                        </li>
+                    
+                
+                    
+                        <li>
+                            <a href="https://twitter.com/BergerEden">
+                                
+                                <span>Twitter</span>
+                            </a>
+                        </li>
+                    
+                
+                    
+                        <li>
+                            <a href="https://github.com/edenberger">
+                                
+                                <span>Github</span>
+                            </a>
+                        </li>
+                    
+                
+            </ul>
+        </div>
+    </div>
+</nav>
+<div id="content">
+
+<div class="row-fluid navmargin main">
+    <div class="page-header">
+        <h1>One Liners</h1>
+    </div>
+    <p class="lead">Some one-liners I found helpful, or very cool</p>
+    <div class="content">
+        <h2 id="purge-unattended-upgrades">Purge unattended-upgrades</h2>
+<pre tabindex="0"><code>systemd-run --property=&#34;After=apt-daily.service apt-daily-upgrade.service&#34; --wait apt purge -y unattended-upgrades
+</code></pre><h2 id="neutralize-ipv6">Neutralize IPv6</h2>
+<pre tabindex="0"><code>sysctl -a|grep &#39;accept_ra &#39;|sed &#39;s|= 1|= 0|&#39;
+sysctl -a|grep max_addresses|sed &#39;s|= 16|= 1|&#39;
+sysctl -a|grep ipv6.*accept_redirects|sed &#39;s|= 1|= 0|&#39;
+sysctl -a|grep ipv6.*accept_source_route|sed &#39;s|= 1|= 0|&#39;
+sysctl -a|grep ipv6.*router_solicitations|sed &#39;s|-1|0|&#39;
+sysctl -a|grep ipv6.*autoconf|sed &#39;s|= 1|= 0|&#39;
+sysctl -a|grep dad_transmits|sed &#39;s|= 1|= 0|&#39;
+echo &#39;net.ipv6.icmp.echo_ignore_all = 1&#39;
+echo &#39;net.ipv6.icmp.echo_ignore_multicast = 1&#39;
+echo &#39;net.ipv6.icmp.echo_ignore_anycast = 1&#39;
+</code></pre><h2 id="disable-apt-auto-update-using-the-config-files">Disable apt auto-update using the config files</h2>
+<pre tabindex="0"><code>function apt_stop () {  
+  sed -i &#34;s|${1}.*|${1} &#34;0&#34;;|&#34; /etc/apt/apt.conf.d/*  
+}  
+apt_stop Enable  
+apt_stop Unattended-Upgrade  
+apt_stop Update-Package-Lists  
+apt_stop Download-Upgradeable-Packages  
+</code></pre>
+    </div>
+    <h4><a href="/">Back to Home</a></h4>
+</div>
+
+
+            </div>
+            <footer>
+                <div>
+
+    This site is cookies and JS free | 
+
+&copy; 
+
+    Eden Berger
+
+<span id="thisyear">2024</span>
+
+
+</div>
+            </footer>
+        </div>
+    </body>
+</html>

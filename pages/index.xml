@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Pages on Eden Berger</title>
+    <link>https://edenberger.io/pages/</link>
+    <description>Recent content in Pages on Eden Berger</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <atom:link href="https://edenberger.io/pages/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>About</title>
+      <link>https://edenberger.io/pages/about/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://edenberger.io/pages/about/</guid>
+      <description>I am a software evolutionist I take in-development systems and make them production ready. A core tenant of my philosophy is believing in the importance of software evolution, in building systems that were made not just to work but made to last. This means taking into consideration the lifecycle of the project at each step of the development and deployment process. I bring with me an &amp;ldquo;automate everything&amp;rdquo; mentality in order to keep systems running smoothly and securely as long as possible.</description>
+    </item>
+    <item>
+      <title>buy list</title>
+      <link>https://edenberger.io/pages/buy/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://edenberger.io/pages/buy/</guid>
+      <description>I have Ansible®, Shell and Powershell® scripts that keep servers patched and configured available for purchase.&#xA;Contact for plans and prices&#xA;They are well documented and easily implemented, aimed for intern-level use and configuration.&#xA;I offer ongoing development and support. I follow best practices and keep up to date with industry changes in order to ensure your servers are running smoothly and securely. I follow guideliens from these mailing lists and institutes:</description>
+    </item>
+    <item>
+      <title>Consultancy</title>
+      <link>https://edenberger.io/pages/consultancy/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://edenberger.io/pages/consultancy/</guid>
+      <description>Services Offered Consulting on software development design on UNIX-based systems Designing security policies and architectures Guidance on how to maximize use of open-source software Tutorials on Linux design and administration Skills list - Solutions architecture&#xA;- Traffic analysis&#xA;- UNIX-based (since 2006)&#xA;- Intrusion detection and response&#xA;- Penetration testing &amp;amp; security auditing&#xA;- NVIDIA® CUDA™ setup and configuration&#xA;- IaC and Documentation&#xA;- Security policies&#xA;- Shell scripting&#xA;- Mentoring and Training</description>
+    </item>
+    <item>
+      <title>Contact</title>
+      <link>https://edenberger.io/pages/contact/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://edenberger.io/pages/contact/</guid>
+      <description> Feel free to email me at eden@edenberger.io. I am most easily accessible on Twitter @BergerEden. Based in Central Israel </description>
+    </item>
+    <item>
+      <title>Courses</title>
+      <link>https://edenberger.io/pages/courses/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://edenberger.io/pages/courses/</guid>
+      <description> ``Operating Systems: Policies&#39;&#39; ``Operating Systems: Software&#39;&#39; </description>
+    </item>
+    <item>
+      <title>One Liners</title>
+      <link>https://edenberger.io/pages/one-liners/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://edenberger.io/pages/one-liners/</guid>
+      <description>Purge unattended-upgrades systemd-run --property=&amp;#34;After=apt-daily.service apt-daily-upgrade.service&amp;#34; --wait apt purge -y unattended-upgrades Neutralize IPv6 sysctl -a|grep &amp;#39;accept_ra &amp;#39;|sed &amp;#39;s|= 1|= 0|&amp;#39; sysctl -a|grep max_addresses|sed &amp;#39;s|= 16|= 1|&amp;#39; sysctl -a|grep ipv6.*accept_redirects|sed &amp;#39;s|= 1|= 0|&amp;#39; sysctl -a|grep ipv6.*accept_source_route|sed &amp;#39;s|= 1|= 0|&amp;#39; sysctl -a|grep ipv6.*router_solicitations|sed &amp;#39;s|-1|0|&amp;#39; sysctl -a|grep ipv6.*autoconf|sed &amp;#39;s|= 1|= 0|&amp;#39; sysctl -a|grep dad_transmits|sed &amp;#39;s|= 1|= 0|&amp;#39; echo &amp;#39;net.ipv6.icmp.echo_ignore_all = 1&amp;#39; echo &amp;#39;net.ipv6.icmp.echo_ignore_multicast = 1&amp;#39; echo &amp;#39;net.ipv6.icmp.echo_ignore_anycast = 1&amp;#39; Disable apt auto-update using the config files function apt_stop () { sed -i &amp;#34;s|${1}.</description>
+    </item>
+    <item>
+      <title>Policies</title>
+      <link>https://edenberger.io/pages/policies/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://edenberger.io/pages/policies/</guid>
+      <description>- Tripwire&#xA;- AIDE&#xA;- Auditd&#xA;- AppArmor&#xA;- SELinux&#xA;- Sudo&#xA;- SSH&#xA;- PAM&#xA;- Falco&#xA;- Sysdig&#xA;- Seccomp&#xA;- Capabilities&#xA;The contents and length of the course can be adjusted by interest and relevance. Technical depth can also be adjusted based on trainees&amp;rsquo; backgrounds.</description>
+    </item>
+    <item>
+      <title>Software</title>
+      <link>https://edenberger.io/pages/software/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://edenberger.io/pages/software/</guid>
+      <description>Software lifecycle - FreeBSD vs Linux. Philosophy and mentality&#xA;- Provision Jails. Terraform, Ansible and Jails&#xA;- Am I Docker? Build a container from scratch&#xA;As part of this training I can also teach modules on any of the topics in my skills list.&#xA;The contents and length of the course can be adjusted by interest and relevance. Technical depth can also be adjusted based on trainees&amp;rsquo; backgrounds.</description>
+    </item>
+  </channel>
+</rss>
